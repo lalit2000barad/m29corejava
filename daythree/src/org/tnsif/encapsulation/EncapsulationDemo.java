@@ -1,7 +1,7 @@
 package org.tnsif.encapsulation;
 
 public class EncapsulationDemo {
-	public void main(String[] args) {
+	public static void main(String[] args) {
 
 		//object creation 
 		HDFCBank h = new HDFCBank();
