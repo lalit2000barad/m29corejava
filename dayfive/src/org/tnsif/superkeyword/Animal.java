@@ -4,8 +4,6 @@ package org.tnsif.superkeyword;
 
 public class Animal {
 
-	
-	
 	public String animalType="wild";
 	public int nooflegs=2;
 	
@@ -18,15 +16,9 @@ public class Animal {
 		System.out.println("No of Legs" + nooflegs);
 	}
 
-
-
 	@Override
 	public String toString() {
 		return "Animal [animalType=" + animalType + ", nooflegs=" + nooflegs + "]";
 	}
-	
-	
-	
-	
 	
 }
