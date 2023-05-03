@@ -7,7 +7,10 @@ public class MethodOverloadingExecutor {
 		System.out.println(m1.multiplication(1.5f, 4));
 		System.out.println(m1.multiplication(5, 15.2f));
 		System.out.println(m1.multiplication(2, 7));
-		
+		System.out.println(m1.print("Welcome to c2tc"));
+		System.out.println(m1.print("Prathik","Shinde"));
 	}
+	
+	
 
 }

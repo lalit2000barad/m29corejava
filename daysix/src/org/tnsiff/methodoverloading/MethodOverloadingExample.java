@@ -24,5 +24,14 @@ public class MethodOverloadingExample {
 		return a*b;
 	}
 	
+	//methodoverloading by changing no of argument
+	public String print(String str)
+	{
+		return str;
+	}
 	
+	public String print(String str,String str1)
+	{
+		return str+str1;
+	}
 }
