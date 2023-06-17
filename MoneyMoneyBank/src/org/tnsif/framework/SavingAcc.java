@@ -8,7 +8,7 @@ public abstract class SavingAcc extends BankAcc {
 		super(accNo, accNm, accBal);
 		this.isSalaried = isSalaried;
 	}
-	
+
 	public void withdraw(float amount) {
 		if(amount > MINBAL) {
 			System.out.println("Balance Before Withdrawal: "+this.getAccBal());

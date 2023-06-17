@@ -1,37 +1,32 @@
 package org.tnsif.framework;
 
 public abstract class BankAcc {
-	
-	//private data members
+
+	// private data members
 	private int accNo;
 	private String accNm;
 	private float accBal;
-	
-	//parameterized constructor
+
+	// parameterized constructor
 	public BankAcc(int accNo, String accNm, float accBal) {
 		super();
 		this.accNo = accNo;
 		this.accNm = accNm;
 		this.accBal = accBal;
 	}
-	
-	public void BankAcc(int accNo2, String accNm2, float accBal2) {
-		// TODO Auto-generated constructor stub
+
+	abstract public void withdraw(float accBal);
+
+	public void deposite(float accBal) {
+		System.out.println(accBal);
 	}
 
-	//methods
-	abstract public void withdraw(float amount);
-	public void deposit(float amount) {
-		System.out.println("Account No: "+this.getAccNo()+"Account Name: "+this.getAccNm()+"Account Balance"+this.getAccBal());
-	}
-	
-	//toString Method
 	@Override
 	public String toString() {
 		return "BankAcc [accNo=" + accNo + ", accNm=" + accNm + ", accBal=" + accBal + "]";
 	}
-	
-	//getters and setters
+
+	// getters and setters
 	public int getAccNo() {
 		return accNo;
 	}

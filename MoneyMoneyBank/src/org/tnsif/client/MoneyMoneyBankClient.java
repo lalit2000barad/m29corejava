@@ -13,8 +13,8 @@ public class MoneyMoneyBankClient {
 
 	public static void main(String[] args) {
 		BankFactory b = new MMBankFactory();
-		SavingAcc s = new MMSavingAcc(1111, "John Smith", 1456, true);
-		CurrentAcc c = new MMCurrentAcc(2222, "James Chadwick", 12000, 9000);
+		SavingAcc s = new MMSavingAcc(1, "Parag", 1500, true);
+		CurrentAcc c = new MMCurrentAcc(2, "Dishant", 12000, 9000);
 		
 		System.out.println(s);
 		System.out.println(c);
@@ -23,7 +23,7 @@ public class MoneyMoneyBankClient {
 		
 		System.out.println("Saving Account");
 		
-		s.withdraw(200);
+		s.withdraw(300);
 		
 		
 		System.out.println("\nCurrent Account");

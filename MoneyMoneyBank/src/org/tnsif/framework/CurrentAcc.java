@@ -1,14 +1,14 @@
 package org.tnsif.framework;
 
 public abstract class CurrentAcc extends BankAcc {
-	
+
 	private final float creditLimit;
 
 	public CurrentAcc(int accNo, String accNm, float accBal, float creditLimit) {
 		super(accNo, accNm, accBal);
 		this.creditLimit = creditLimit;
 	}
-	
+
 	public void withdraw(float amount) {
 		if(this.getAccBal() > creditLimit+amount) {
 			System.out.println("Balance Before Withdrawal: "+this.getAccBal());
@@ -24,7 +24,7 @@ public abstract class CurrentAcc extends BankAcc {
 		return "CurrentAcc [creditLimit=" + creditLimit + "]";
 	}
 
-	
-	
+
+
 
 }
